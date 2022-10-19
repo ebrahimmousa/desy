@@ -1,0 +1,88 @@
+header{
+    margin-left: 80%;
+    padding:0;
+    background-color: rgb(55, 51, 51);
+    color: white;
+
+}
+body{
+    object-fit: ;
+    background-image: url(images/bg-img.jpg);
+    background-position: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+nav ul{
+    text-align: right;
+
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: white;
+    margin: auto;
+    display: block;
+}
+
+li a:hover::after{
+    width: 100%;
+    transition: width 0s linear;
+
+}
+
+section{
+    flex-direction: column;
+    color: white;
+    padding-top: 17%;
+    text-align: center;
+}
+
+
+.team{
+    margin 75px 0;
+}
+laget{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+    padding-bottom: 50px;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 300px;
+    margin-right: 700px;
+}
+.ra-dis{
+    background-color: lightgray;
+    color: black;
+}
+
+footer{
+    flex-direction: row;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.social-menu {
+    color: white;
+}
