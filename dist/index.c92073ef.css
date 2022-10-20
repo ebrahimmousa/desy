@@ -1,0 +1,11 @@
+body:before {
+  white-space: pre;
+  content: "Error: expected \"{\".\a    ╷\a 28 │     list-style-type: none;\d \a    │                          ^\a    ╵\a   scss\\main.scss 28:26  root stylesheet";
+  border-bottom: 2px solid #000;
+  margin-bottom: 1em;
+  padding: 1em;
+  font-family: Source Code Pro, SF Mono, Monaco, Inconsolata, Fira Mono, Droid Sans Mono, monospace;
+  display: block;
+}
+
+/*# sourceMappingURL=index.c92073ef.css.map */

@@ -1,0 +1,212 @@
+/*colors*/
+header {
+  background-color: rgb(216, 207, 207);
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul {
+  text-align: right;
+}
+
+.laget {
+  text-align: center;
+  font-size: 1, 4em;
+  margin-top: 36%;
+}
+
+li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: white;
+  margin: auto;
+  display: block;
+}
+
+li a:hover::after {
+  width: 100%;
+  transition: width 0s linear;
+}
+
+section {
+  flex-direction: column;
+  color: white;
+  padding-top: 17%;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+  width: 500px;
+  display: inline-block;
+  vertical-align: top;
+}
+.profile img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+h5 {
+  color: black;
+}
+
+.rakib {
+  padding: 40px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 20px;
+  background-color: rgb(216, 207, 207);
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.alexandra {
+  padding: 40px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 20px;
+  background-color: rgb(216, 207, 207);
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.lasse {
+  padding: 40px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 20px;
+  background-color: rgb(216, 207, 207);
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.sebastian {
+  padding: 40px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 20px;
+  background-color: rgb(216, 207, 207);
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+header {
+  background-color: rgba(216, 207, 207, 0.452);
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+body {
+  object-fit: fill;
+  background-image: url(../images/bg-img.jpg);
+  background-position: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+body .laget {
+  text-align: center;
+  font-size: 1, 4em;
+  margin-top: 36%;
+}
+body .laget nav ul {
+  text-align: right;
+}
+body .laget li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+body .laget a {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+}
+body .laget li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: white;
+  margin: auto;
+  display: block;
+}
+body .laget:hover::after {
+  width: 100%;
+  transition: width 0s linear;
+}
+body .laget section {
+  flex-direction: column;
+  color: white;
+  padding-top: 17%;
+  text-align: center;
+}
+body .laget section .profile {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+  width: 500px;
+  display: inline-block;
+  vertical-align: top;
+}
+body .laget section img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+body .laget section h5 {
+  color: black;
+}
+body .laget section .rakib,
+body .laget section .alexandra,
+body .laget section .lasse,
+body .laget section .sebastian {
+  padding: 40px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 20px;
+  background-color: rgb(216, 207, 207);
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+body .laget section footer {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
