@@ -1,8 +1,6 @@
-@use "variables";
-
-header {
-  background-color: rgb(216, 207, 207);
+html,
+body {
   width: 100%;
-  position: fixed;
-  z-index: 999;
+  height: 100%;
+  margin: 0;
 }

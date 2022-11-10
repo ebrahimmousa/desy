@@ -1,9 +1,5 @@
-@use "variables" as v;
-
-@mixin body {
-  object-fit: fill;
-  background-image: url(/images/bg-img.jpg);
-  background-position: fixed;
-  background-size: 100%;
-  background-repeat: no-repeat;
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
 }

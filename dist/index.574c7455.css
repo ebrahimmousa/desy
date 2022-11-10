@@ -1,177 +1,244 @@
-header {
-  width: 100%;
-  z-index: 999;
-  background-color: #d8cfcf;
-  position: fixed;
+#scroll {
+  display: none;
 }
 
-nav ul li a {
-  color: #fff;
-  font-weight: lighter;
-  text-decoration: none;
+.hamburger {
+  z-index: 5;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 25px;
 }
 
-nav ul li {
-  padding: 10px 20px;
-  list-style-type: none;
-  display: inline-block;
+@media screen and (min-width: 1200px) {
+  .hamburger {
+    display: none;
+  }
 }
 
-nav ul {
-  text-align: right;
-}
-
-.laget {
-  text-align: center;
-  font-size: 1, 4em;
-  margin-top: 36%;
-}
-
-li a:after {
-  content: "";
-  width: 0;
-  height: 3px;
+.hamburger div {
+  width: 48px;
+  height: 7px;
   background-color: #fff;
-  margin: auto;
-  display: block;
+  border-radius: 3px;
+  margin-top: 8px;
+  transition: all .3s ease-in-out;
+  position: relative;
 }
 
-li a:hover:after {
-  width: 100%;
-  transition: width linear;
+#scroll:checked + .hamburger .hamburger__top-bun {
+  margin-top: 25px;
+  transform: rotate(135deg);
 }
 
-section {
-  color: #fff;
-  text-align: center;
-  flex-direction: column;
-  padding-top: 17%;
+#scroll:checked + .hamburger .hamburger__bottom-bun {
+  opacity: 0;
+  transform: rotate(-135deg);
 }
 
-.profile {
-  width: 500px;
-  vertical-align: top;
-  flex-flow: wrap;
-  justify-content: space-around;
-  margin: 0%;
-  padding: 0%;
-  list-style: none;
-  display: inline-block;
+#scroll:checked + .hamburger .hamburger__meat {
+  margin-top: -7px;
+  transform: rotate(45deg);
 }
 
-.profile img {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-}
-
-h5 {
-  color: #000;
-}
-
-.rakib, .alexandra, .lasse, .sebastian {
-  background-color: #d8cfcf;
-  border: none;
-  border-radius: 5px;
-  margin: 20px 30px 20px 20px;
-  padding: 40px;
-  font-size: 15px;
-}
-
-header {
-  width: 100%;
-  z-index: 999;
-  background-color: #d8cfcf73;
-  position: fixed;
+#scroll:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
 }
 
 body {
-  object-fit: fill;
   background-image: url("bg-img.1716262a.jpg");
-  background-position: fixed;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
-body .laget {
-  text-align: center;
-  font-size: 1, 4em;
-  margin-top: 36%;
+body header .nav {
+  width: 100%;
+  height: 20%;
+  background-color: #fff3;
+  transition: all .3s ease-in-out;
+  position: absolute;
+  inset: -100% 0 0;
 }
 
-body .laget nav ul {
-  text-align: right;
+@media screen and (min-width: 1200px) {
+  body header .nav {
+    height: 75px;
+    width: 100%;
+    top: 0;
+  }
 }
 
-body .laget li {
-  padding: 10px 20px;
-  list-style-type: none;
-  display: inline-block;
+body header .nav__wrapper {
+  height: 95%;
 }
 
-body .laget a {
+@media screen and (min-width: 1200px) {
+  body header .nav__wrapper {
+    width: 40%;
+  }
+}
+
+body header .nav__wrapper__items {
+  height: 100%;
   color: #fff;
-  font-weight: lighter;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: color .2s ease-in-out;
+  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  body header .nav__wrapper__items {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    display: flex;
+    position: absolute;
+    right: 50px;
+  }
+}
+
+body header .nav__wrapper__items li a {
+  color: #fff;
+  font-size: x-large;
   text-decoration: none;
 }
 
-body .laget li a:after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background-color: #fff;
-  margin: auto;
-  display: block;
+@media screen and (min-width: 1200px) {
+  body header .nav__wrapper__items li a {
+    margin: 15px;
+  }
+
+  body header .nav__wrapper__items li a:hover {
+    text-decoration: underline;
+  }
 }
 
-body .laget:hover:after {
-  width: 100%;
-  transition: width linear;
-}
-
-body .laget section {
-  color: #fff;
-  text-align: center;
+body main .welcome {
+  height: 100vh;
   flex-direction: column;
-  padding-top: 17%;
-}
-
-body .laget section .profile {
-  width: 500px;
-  vertical-align: top;
-  flex-flow: wrap;
-  justify-content: space-around;
-  margin: 0%;
-  padding: 0%;
-  list-style: none;
-  display: inline-block;
-}
-
-body .laget section img {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-}
-
-body .laget section h5 {
-  color: #000;
-}
-
-body .laget section .rakib, body .laget section .alexandra, body .laget section .lasse, body .laget section .sebastian {
-  background-color: #d8cfcf;
-  border: none;
-  border-radius: 5px;
-  margin: 20px 30px 20px 20px;
-  padding: 40px;
-  font-size: 15px;
-}
-
-body .laget section footer {
-  color: #fff;
-  background-color: #000;
-  flex-direction: row;
-  padding: 20px;
+  justify-content: center;
+  font-size: x-large;
   display: flex;
+}
+
+body main .welcome__text {
+  text-align: center;
+  color: #fff;
+  flex-direction: column;
+  gap: 50px;
+  margin: 20px;
+  font-size: xx-large;
+  display: flex;
+}
+
+body main #link--om {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 90%;
+}
+
+body main #link--kontakt {
+  color: #000;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+body main .team {
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+body main .team h2 {
+  flex-basis: 100%;
+  font-size: xx-large;
+}
+
+@media screen and (min-width: 1200px) {
+  body main .team {
+    flex-flow: wrap;
+  }
+
+  body main .team__profile {
+    width: 50%;
+  }
+}
+
+body main .team__profile__img {
+  width: 60%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 40px 15px #99999982;
+}
+
+body main .team__profile__quote {
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  margin: 40px;
+  padding: 40px;
+  font-size: large;
+}
+
+body footer {
+  color: #fff;
+  height: 500px;
+  width: 100%;
+  background-color: #000;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  position: static;
+  bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  body footer {
+    height: 300px;
+  }
+}
+
+body footer .contact {
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
+  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  body footer .contact {
+    flex-direction: row;
+    gap: 250px;
+  }
+}
+
+body footer .contact__info {
+  flex-direction: column;
+  gap: 10px;
+  font-size: x-large;
+  display: flex;
+}
+
+body footer .contact__info i {
+  padding-right: 16px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 /*# sourceMappingURL=index.574c7455.css.map */

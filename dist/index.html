@@ -4,123 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.e5980c4e.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Färdig Design</title>
-
-
-
+    <title>Welcome to nature</title>
+    <link href="/index.574c7455.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/131d4698ad.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-    <nav>        
-        <ul>
-            <li><a href="#home">Hem</a></li>
-            <li><a href="#about">Om</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-
-        </ul>
-        
-    </nav>
+        <input title="navclick" id="scroll" type="checkbox">
+        <label for="scroll" class="hamburger">
+            <div class="hamburger__top-bun"></div>
+            <div class="hamburger__meat"></div>
+            <div class="hamburger__bottom-bun"></div>
+        </label>
+        <nav class="nav">
+        <nav class="nav__wrapper">
+            <ul class="nav__wrapper__items">
+                <li><a href="#">Hem</a></li>
+                <li><a href="#about">Om</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        </nav>
     </header>
-    <section class="home" id="home">
-    <h1>Welcome to nature</h1>
-    <br>
-        <h3>A journey through time and sheepp</h3>
-        <br>
-        <h3>To see how ...cotton...is mage, made i mean..</h3>
-    </section>
-    
+    <main>
+        <section class="welcome">
+        <article class="welcome__text">
+            <h1>Welcome to nature</h1>
+            <span>A journey through time and sheep</span>
+            <span>To see how ...cotton ... is mage, made I mean...</span>
+        </article>
+        <a title="about" id="link--om" href="#about"><i class="fa-solid fa-circle-down"></i></a>
 
-    <h1 class="laget">Träffa Laget</h1>
-
-<section class="about" id="about">
-     <div class="profile">
-     <h5> Rakib </h5><br>
-     <img src="/Rakib.0e96d738.png" alt="">
-     <button class="rakib"> <i class="fa fa-quote-right fa-4x"></i> Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på nya tekniker </button>
-     </div>
-     <div class="profile">
-     <h5> Alexandra </h5><br>
-    <img src="/Alexandra.47611350.png" alt="">
-     <button class="alexandra"> <i class="fa fa-quote-right fa-4x"></i> 
-        Alexandra håller reda på alla överallt och ser till att deta flyter
-        
-         </button>
-     </div>
-    <div class="profile">
- <h5> Lasse </h5><br>
-    <img src="/NoPerson.880813ab.png" alt="">
-    <button class="lasse"> <i class="fa fa-quote-right fa-4x"></i> Gör övriga saker... mestadels ... </button>
-    </div>
-     <div class="profile">
-     <h5> Sebastian </h5><br>
-     <img src="/Sebastian.c5e2431d.png" alt="">
- <button class="sebastian"> <i class="fa fa-quote-right fa-4x"></i> 
-    En av våra utbildare som har stor erfarenhet av ganska många saker
-    
-     </button>
-</div>
-</section>
-<section class="contact" id="contact">
-
-    <footer class="footer">
-
-        <div class="container">
-    
-            <div class="row">
-    
-                <div class="footer-map">
-    
-    <br>
-    
-                    <h4 class="map"> Tegel Consultiong AB </h4><br>
-    
-                    <h4 class="map1"> Agatvägen 18</h4> <br>
-    
-                    <h4 class="map2"> 168 60 Bromma </h4>
-    
+        </section>
+        <section class="team" id="about">
+            <h2>Träffa laget</h2>
+                <div class="team__profile">
+                    <h3>Rakib</h3>
+                    <img class="team__profile__img" src="/Rakib.0e96d738.png" alt="Picture of Rakib">
+                    <div class="team__profile__quote">
+                        <i class="fa-solid fa-quote-right fa-3x"></i>Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på nya tekniker</div>
                 </div>
-    
-                <div class="footer-conatact">
-    
-    <br>
-    
-    <h4 class="f-contact"> info at tegelconsulting.se </h4> <br>
-    
-    <h4 class="f-contact1"> 070-123 456 78 </h4>
-    
+                <div class="team__profile">
+                    <h3>Alexandra</h3>
+                    <img class="team__profile__img" src="/Alexandra.47611350.png" alt="Picture of Alexandra">
+                    <div class="team__profile__quote">
+                        <i class="fa-solid fa-quote-right fa-3x"></i>Alexandra håller reda på alla överallt och ser till att det flyter</div>
                 </div>
-    
-                <div class="footer-social">
-    
-    <br>
-    
-                        <div class="social-links">
-    
-                            <a href="#"><i class="fab fa-instagram"></i></a> Instagram
-    
-                            <br><br>
-    
-                            <a href="#"><i class="fab fa-twitter"></i></a> Twitter
-    
-                            <br><br>
-    
-                            <a href="#"><i class="fab fa-facebook-f"></i></a> Facebook
-    
-                        </div>
-    
+                <div class="team__profile">
+                    <h3>Lasse</h3>
+                    <img class="team__profile__img" src="/NoPerson.880813ab.png" alt="Anonymous picture">
+                    <div class="team__profile__quote">
+                        <i class="fa-solid fa-quote-right fa-3x"></i>Gör övriga saker... mestadels...</div>
                 </div>
-    
+                <div class="team__profile">
+                    <h3>Sebastian</h3>
+                    <img class="team__profile__img" src="/Sebastian.c5e2431d.png" alt="Picture of Sebastian">
+                    <div class="team__profile__quote">
+                        <i class="fa-solid fa-quote-right fa-3x"></i>En av våra utbildare som har stor erfarenhet av ganska många saker</div>
+                </div>
+                <a title="contact" id="link--kontakt" href="#contact"><i class="fa-solid fa-circle-down fa-2x"></i></a>   
+        </section>
+    </main>
+    <footer>
+        <section class="contact" id="contact">
+            <div class="contact__info">
+                <span>Tegel Consulting AB</span>
+                <span>Agatvägen 18</span>
+                <span>168 60 Bromma</span>
             </div>
-    
-        </div>
-    
-    
-     </footer>
-</section>
-<script src="/Färdig%20Design.3464ddca.js"></script></body>
-
-
+            <div class="contact__info">
+                <span>info at tegelconsulting.se</span>
+                <span>070-123 456 78</span>
+            </div>
+            <div class="contact__info">
+                <span><i class="fa-brands fa-instagram"></i>Instagram</span>
+                <span><i class="fa-brands fa-twitter"></i>Twitter</span>
+                <span><i class="fa-brands fa-facebook-f"></i>Facebook</span>
+            </div>
+        </section>  
+    </footer>
+<script src="/desy.3464ddca.js"></script></body>
 </html>
